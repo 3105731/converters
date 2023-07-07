@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Back_ground">#E1D4F7</color>
+    <color name="Enter_Result">#AD99CE</color>
+    <color name="The_name">#BB42CE</color>
+    <color name="converter">#DE77EF</color>
+    <color name="Button">#C5C6C8</color>
+
+</resources>
+
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Back_ground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="413dp"
+        android:layout_height="49dp"
+        android:background="@color/The_name"
+        android:gravity="center"
+        android:text="@string/The_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Enter"
+        android:layout_width="413dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/enter"
+        android:gravity="center"
+        android:hint="@string/enter_number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/submit"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Enter">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/submit"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/Enter"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/Des"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/converters"
+        android:gravity="center"
+        android:hint="@string/des"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Bin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Bin"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/converters"
+        android:gravity="center"
+        android:hint="@string/bin"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Oct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Des">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Oct"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/converters"
+        android:gravity="center"
+        android:hint="@string/oct"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Hex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Bin">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Hex"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/converters"
+        android:gravity="center"
+        android:hint="@string/hex"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Oct">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
