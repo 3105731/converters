@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Back_ground"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="413dp"
-        android:layout_height="49dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:background="@color/The_name"
         android:gravity="center"
         android:text="@string/The_name"
@@ -24,15 +25,18 @@
 
     <EditText
         android:id="@+id/Enter"
-        android:layout_width="413dp"
-        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/enter"
+        android:digits="0123456789"
+        android:inputType="number"
         android:gravity="center"
         android:hint="@string/enter_number"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints">
 
     </EditText>
@@ -69,9 +73,9 @@
 
     <TextView
         android:id="@+id/Des"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="53dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/converters"
         android:gravity="center"
@@ -86,8 +90,8 @@
 
     <TextView
         android:id="@+id/Bin"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/converters"
         android:gravity="center"
@@ -102,8 +106,8 @@
 
     <TextView
         android:id="@+id/Oct"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/converters"
         android:gravity="center"
@@ -118,8 +122,8 @@
 
     <TextView
         android:id="@+id/Hex"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/converters"
         android:gravity="center"
